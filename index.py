@@ -1,0 +1,6 @@
+print("Bem vindo ao calculador de conta!")
+total_conta = input("Qual o valor total da conta?\n")
+porcentagem_gorjeta = input("Quanto por cento de gorjeta voce quer dar?\n")
+quantidade_pessoas = input("Para dividir em quantas pessoas?\n")
+total_pessoa = round((float(total_conta) + float(total_conta) / 100 * int(porcentagem_gorjeta)) / int(quantidade_pessoas), 2)
+print(f"Cada pessoa deve pagar {total_pessoa}")
